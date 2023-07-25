@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <style>
+                .lato{
+                    font-family: 'Lato', sans-serif;
+                }
+            </style>
+    </head>
+    <body class="lato">
+        <header>
+            <!-- navbar section start here -->
+            <nav class="lg:w-3/4 mx-auto bg-[#F85559] rounded-full mt-12 mb-14 text-white">
+                <div class="navbar">
+                    <div class="navbar-start hidden text-lg font-medium lg:flex lg:ml-6">
+                        <ul class="menu menu-horizontal px-1 py-4">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-center">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost"><img class="w-[50px] h-[50px]"
+                                src="./images/logo.png" alt="logo"><p
+                                class="text-3xl font-bold">Fruit Burst</p></a>
+                        
+                    </div>
+
+                    <div class="navbar-end hidden lg:relative lg:inline-flex lg:mr-10">
+                        <input class="w-96 h-12 bg-[#FFF] rounded-3xl p-5"
+                            placeholder="Search here">
+                        <div class="absolute text-black mr-4">
+                            <a href><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <main></main>
+        <footer>
+            
+        </footer>
+    </body>
 </html>
