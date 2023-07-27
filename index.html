@@ -48,12 +48,12 @@
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    <div class="navbar-center gap-16 pl-2">
+                    <div class="navbar-center md:flex md:flex-row-reverse md:ml-40 gap-16 pl-4">
                         <a class="flex flex-row items-center gap-2"><img class="w-[50px] h-[50px]"
                             src="./images/logo.png" alt="logo"><p
                             class="text-3xl font-bold">Fruit Burst</p></a>
                         <div class="dropdown">
-                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <label tabindex="0" class="btn btn-ghost relative lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor"><path
@@ -62,11 +62,14 @@
                                         d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3  z-[1] p-2 shadow bg-base-100 absolute rounded-box w-50 text-black">
+                                class="menu menu-sm dropdown-content mt-3  z-[1] p-2 shadow bg-base-100 rounded-box text-black absolute -left-[120%]">
                                 <li><a>Home</a></li>
                                 <li><a>About Us</a></li>
                                 <li><a>Shop</a></li>
                                 <li><a>All Fruits</a></li>
+                                <li><div class="inline-flex">
+                                    <input type="text" placeholder="search" class="relative w-24 pl-2 border-2 border-current rounded-md"><a href="" class="absolute right-[12%]"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div></li>
                             </ul>
                         </div>
                         <!-- <a class="flex flex-row items-center gap-2"><img class="w-[50px] h-[50px]"
@@ -88,20 +91,20 @@
             <!-- navbar section end here -->
 
             <!-- banner section start here -->
-            <section class="w-3/4 mx-auto ">
-                <div class="carousel w-full">
-                    <div id="slide1" class="carousel-item relative w-full">
-                        <img src="./images/banner3.png" class="w-full brightness-50" />
+            <section class="w-[95%] md:w-3/4 mx-auto ">
+                <div class="carousel md:w-full h-[400px] md:h-auto">
+                    <div id="slide1" class="carousel-item relative w-full rounded-lg">
+                        <img src="./images/banner3.png" class="w-full h-full md:h-auto brightness-50 rounded-lg" />
                         <div
-                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide4" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
+                            class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❮</a>
+                            <a href="#slide2" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❯</a>
                         </div>
                         <div
-                            class="absolute left-[30%] top-[15%] text-[#FFF] text-center space-y-8">
-                            <h1 class="text-7xl font-extrabold ">Exotic tastes
+                            class="absolute left-[10%] top-[29%]  text-[#FFF] text-center space-y-4 lg:left-[27%] lg:top-[15%] lg:space-y-8">
+                            <h1 class="text-2xl lg:text-7xl font-extrabold ">Exotic tastes
                                 at your<br> doorstep </h1>
-                            <p class="text-xl font-medium ">We supply highly
+                            <p class="text-base font-normal lg:text-xl lg:font-medium ">We supply highly
                                 quality organic products</p>
 
                             <button class="btn btn-active bg-[#F85559] text-[#FFF] border-none hover:text-[#F85559]">Shop
@@ -109,18 +112,18 @@
 
                         </div>
                     </div>
-                    <div id="slide2" class="carousel-item relative w-full">
-                        <img src="./images/banner2.png" class="w-full brightness-50" />
+                    <div id="slide2" class="carousel-item relative w-full rounded-lg">
+                        <img src="./images/banner2.png" class="w-full h-full md:h-auto brightness-50 rounded-lg"/>
                         <div
-                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide3" class="btn btn-circle">❯</a>
+                            class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❮</a>
+                            <a href="#slide3" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❯</a>
                         </div>
                         <div
-                            class="absolute left-[30%] top-[15%] text-[#FFF] text-center space-y-8">
-                            <h1 class="text-7xl font-extrabold ">Exotic tastes
+                            class="absolute left-[10%] top-[29%] lg:left-[27%] lg:top-[15%] text-[#FFF] text-center space-y-4 lg:space-y-8">
+                            <h1 class="text-2xl lg:text-7xl font-extrabold ">Exotic tastes
                                 at your<br> doorstep </h1>
-                            <p class="text-xl font-medium ">We supply highly
+                            <p class="text-base font-normal lg:text-xl lg:font-medium ">We supply highly
                                 quality organic products</p>
                             <!-- <button class="bg-[#F85559] rounded-lg text-xl font-extrabold  text-center">Shop Now</button> -->
 
@@ -130,18 +133,18 @@
 
                         </div>
                     </div>
-                    <div id="slide3" class="carousel-item relative w-full">
-                        <img src="./images/banner1.png" class="w-full brightness-50" />
+                    <div id="slide3" class="carousel-item relative w-full rounded-lg">
+                        <img src="./images/banner1.png" class="w-full h-full md:h-auto brightness-50 rounded-lg"/>
                         <div
-                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide2" class="btn btn-circle">❮</a>
-                            <a href="#slide4" class="btn btn-circle">❯</a>
+                            class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❮</a>
+                            <a href="#slide4" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❯</a>
                         </div>
                         <div
-                            class="absolute left-[30%] top-[15%] text-[#FFF] text-center space-y-8">
-                            <h1 class="text-7xl font-extrabold ">Exotic tastes
+                            class="absolute left-[10%] top-[29%] lg:left-[27%] lg:top-[15%] text-[#FFF] text-center space-y-4 lg:space-y-8">
+                            <h1 class="text-2xl lg:text-7xl font-extrabold ">Exotic tastes
                                 at your<br> doorstep </h1>
-                            <p class="text-xl font-medium ">We supply highly
+                            <p class="text-base font-normal lg:text-xl lg:font-medium ">We supply highly
                                 quality organic products</p>
                             <!-- <button class="bg-[#F85559] rounded-lg text-xl font-extrabold  text-center">Shop Now</button> -->
 
@@ -152,17 +155,17 @@
                         </div>
                     </div>
                     <div id="slide4" class="carousel-item relative w-full">
-                        <img src="./images/banner4.png" class="w-full brightness-50" />
+                        <img src="./images/banner4.png" class="w-full h-full md:h-auto brightness-50 rounded-lg" />
                         <div
-                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide3" class="btn btn-circle">❮</a>
-                            <a href="#slide1" class="btn btn-circle">❯</a>
+                            class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 lg:left-5 lg:right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❮</a>
+                            <a href="#slide1" class="btn btn-circle w-4 h-4 lg:w-16 lg:h-16">❯</a>
                         </div>
                         <div
-                            class="absolute left-[30%] top-[15%] text-[#FFF] text-center space-y-8">
-                            <h1 class="text-7xl font-extrabold ">Exotic tastes
+                            class="absolute left-[10%] top-[29%] lg:left-[27%] lg:top-[15%] text-[#FFF] text-center space-y-4 lg:space-y-8">
+                            <h1 class="text-2xl lg:text-7xl font-extrabold ">Exotic tastes
                                 at your<br> doorstep </h1>
-                            <p class="text-xl font-medium ">We supply highly
+                            <p class="text-base font-normal lg:text-xl lg:font-medium ">We supply highly
                                 quality organic products</p>
                             <!-- <button class="bg-[#F85559] rounded-lg text-xl font-extrabold  text-center">Shop Now</button> -->
 
@@ -226,7 +229,7 @@
         <main class="w-3/4 mx-auto">
 
             <!-- Deal of the day section start here -->
-            <section class="mt-64 flex flex-col lg:flex-row justify-between items-center">
+            <section class="mt-9 lg:mt-64 flex flex-col lg:flex-row justify-between items-center">
                 <div class="space-y-6 text-center lg:text-start">
                     <h1 class="text-5xl font-extrabold text-[#121212]">Deal of
                         the day</h1>
@@ -802,12 +805,15 @@
             </section>
             <!-- meet with team section end here -->
             <!-- why choose us section start here -->
-            <section class="mb-32">
+            <section class="mb-10 lg:mb-32">
                 <div class="text-center space-y-6 mb-12">
                     <h1 class="text-[#121212] text-2xl font-extrabold">Why Choose Us</h1>
                     <p class="text-base font-medium text-[#12121299] leading-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="grid lg:grid-cols-3">
+                    <div class="mx-auto sm:hidden">
+                        <img src="./images/whychoose1.png" alt="" class="h-[90%]">
+                    </div>
                     <div>
                         <div class="flex flex-col lg:flex-row gap-6 mb-12">
                             <div class="w-20 h-20 bg-slate-300 rounded-[50%] flex justify-center items-center mx-auto lg:mx-0">
@@ -841,7 +847,7 @@
                         </div>
 
                     </div>
-                    <div>
+                    <div class="hidden md:block md:mx-auto lg:inline-block">
                         <img src="./images/whychoose1.png" alt="" class="h-[90%]">
                     </div>
                     <div>
@@ -891,7 +897,7 @@
                             class="text-3xl font-bold">Fruit Burst</p></a>
 
                     <div class="my-16 text-lg lg:font-semibold">
-                        <ul class="grid grid-cols-4 grid-flow-row lg:flex lg:flex-row lg:gap-14">
+                        <ul class="grid grid-cols-4 grid-flow-row gap-y-4 lg:flex lg:flex-row lg:gap-14">
                             <li><a href>Home</a></li>
                             <li><a href>About Us</a></li>
                             <li><a href>Shop</a></li>
